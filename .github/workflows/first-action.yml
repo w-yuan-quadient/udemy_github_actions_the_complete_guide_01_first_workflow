@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: Print greeting
         run: echo "Hello World!"
+      - name: Output GitHub context
+        run: echo "${{ toJSON(github) }}"
       - name: Print goodbye
         run: echo "Done - bye!"
